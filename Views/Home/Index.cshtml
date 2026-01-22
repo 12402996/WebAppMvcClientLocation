@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>The database has been started in Program.cs </h1>
+
+<div class="row m-1 p-1">
+    <div id="menu" class="col-3 border border-primary">
+        <ul>
+            <li><a asp-action="Index">Home</a></li>
+            <li><a asp-action="Index" asp-controller="Clients">Clients</a></li>
+            <li>Locations</li>
+            <li>Overviews</li>
+        </ul>
+    </div>
+    <div id="main" class="col-9 border border-primary">
+        <h4>Client records: @ViewBag.ClientCount</h4>
+        <h4>Location records: @ViewBag.LocationCount</h4>
+    </div>
+</div>
