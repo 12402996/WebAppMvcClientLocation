@@ -6,7 +6,7 @@ using WebAppMvcClientLocation.Models;
 
 namespace WebAppMvcClientLocation.Controllers
 {
-    public class HomeControllers : Controller
+    public class HomeController : Controller
     {
         public HomeControllers()
         {
