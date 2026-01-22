@@ -6,9 +6,9 @@ using WebAppMvcClientLocation.Models;
 
 namespace WebAppMvcClientLocation.Controllers
 {
-    public class HomeControllers : Controller
+    public class HomeController : Controller
     {
-        public HomeControllers()
+        public HomeController()
         {
             //Database db = new Database(); -> Zonder static class geef je die mee
             //db.StartDataBase();

@@ -1,12 +1,13 @@
-﻿ using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace WebAppMvcClientLocation.Controllers
 {
-    public class ClientLocations : Controller
+    public class LocationsController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
+       
     }
 }

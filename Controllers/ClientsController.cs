@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebAppMvcClientLocation.Data;
+using WebAppMvcClientLocation.Models;
 
 namespace WebAppMvcClientLocation.Controllers
 {
@@ -6,11 +8,19 @@ namespace WebAppMvcClientLocation.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            List<Client> clients =  Database.Clients; 
+            return View(clients);
         }
         public IActionResult Create()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Client client)
+        {
+            Database.Clients.Add(client);
+            return RedirectToAction("Index");
         }
     }
 }
